@@ -1,0 +1,88 @@
+.hero {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.left .banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.left .hero-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.left .banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+    /* z-index: -1; */
+}
+
+.hero .left .contant {
+    position: absolute;
+    transform: translate( -50%, -50%);
+    top: 50%;
+    left: 25%;
+    text-align: center;
+}
+.hero .left .contant h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+}
+.hero .left .contant p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.contant .btn {
+    margin: 1rem 0.2rem;
+
+}
+.hero .right .side-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+
+}
+.right .btn  {
+    /* margin: 1rem 0.2rem; */
+    padding: 12px 32px;
+    margin: 1rem auto;
+    
+
+}
+@media (max-width:640px) {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero .contant h1 {
+        font-size: 3rem;
+    }
+    .hero .contant p {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:1000px) {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero .left .contant {
+        left: 50%;
+        text-align: center;
+    }
+
+}
