@@ -13,9 +13,11 @@ const AboutContant = () => {
           I am a react front-end Developer. I create responsive web site designs.
         </p>
         <Link to="/Contact" className=" btn">
-          <btn>Contact</btn>
+          Contact
         </Link>
       </div>
+
+      
       {/* <div className="right">
         <div className="img-container">
             <div className="img-stack top">
