@@ -10,7 +10,7 @@ const AboutContant = () => {
       <div className="left">
         <h1>Who am I</h1>
         <p>
-          I am a react front-end Developer. I cerat responsive web site designs.
+          I am a react front-end Developer. I create responsive web site designs.
         </p>
         <Link to="/Contact" className=" btn">
           <btn>Contact</btn>
